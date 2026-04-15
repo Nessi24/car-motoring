@@ -50,7 +50,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-10 max-w-xl">
-            6 años sirviendo a la comunidad de Caguas con técnicos de más de 15 años de experiencia. Diagnóstico experto, precios justos y trabajo garantizado.
+            Ubicados en Caguas, Puerto Rico. 6 años de taller con técnicos de más de 15 años de experiencia. Diagnóstico experto, precios justos y trabajo garantizado.
           </p>
 
           {/* CTA Buttons */}

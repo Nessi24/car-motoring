@@ -167,18 +167,23 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-border">
           {/* Info panel */}
           <div className="bg-card p-10 flex flex-col gap-10">
-            {/* OpenStreetMap embed — no API key needed, loads reliably */}
-            <div className="relative overflow-hidden h-52 bg-card">
+            {/* Google Maps embed via lugar */}
+            <div className="relative overflow-hidden rounded-none bg-card" style={{height: "260px"}}>
               <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-66.0427,-66.0367,18.2702,18.2762&layer=mapnik&marker=18.273223,-66.039696"
-                className="w-full h-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.7!2d-66.039696!3d18.273223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDE2JzIzLjYiTiA2NsKwMDInMjIuOSJX!5e0!3m2!1ses!2spr!4v1"
+                width="100%"
+                height="100%"
+                className="border-0 w-full h-full"
+                allowFullScreen
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicacion Car Motoring Caguas PR"
               />
               <a
                 href="https://www.google.com/maps?q=18.273223,-66.039696"
-                onClick={(e) => { e.preventDefault(); window.location.href = "https://www.google.com/maps?q=18.273223,-66.039696" }}
-                className="absolute bottom-2 right-2 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 hover:bg-primary/90 transition-colors flex items-center gap-1 z-10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-2 right-2 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-2 hover:bg-primary/90 transition-colors flex items-center gap-1.5 z-10 shadow-lg"
               >
                 <MapPin className="w-3 h-3" />
                 Como llegar
